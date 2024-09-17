@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-left: 500px;
+  margin-top: 28px;
+}
+
+.logo h2 {
+  margin-left: -167px;
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+}
+
+.logo h4 {
+  margin-left: -120px;
+  margin-top: 69px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.line {
+  margin-left: 10px;
+  margin-top: 42px;
+  width: 167px;
+}
+
+.logo span {
+  color: #ffd700;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bg {
+  display: flex;
+  /* z-index: 1; */
+  position: absolute;
+}
+
+.bg img {
+  margin-top: -190px;
+  filter: brightness(35%);
+  width: 1263px;
+  position: fixed;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+  margin-right: 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.cart a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.cart-icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.cart-icon img {
+  width: 25px;
+  height: 23px;
+  margin-bottom: -5px;
+}
+
+.firstdiv {
+  z-index: 1;
+  position: relative;
+  display: inline;
+}
+
+.under1 {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 93.7%;
+  height: 50%;
+  filter: contrast(85%);
+}
+
+.rings img {
+  z-index: 1;
+  position: relative;
+  margin-top: -480px;
+  margin-left: 80px;
+  display: flex;
+  width: 570px;
+  height: 380px;
+  filter: contrast(79%);
+  /* filter: saturate(30%); */
+}
+
+.rings h1 {
+  z-index: 1;
+  position: relative;
+  margin-left: 700px;
+  margin-top: -350px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4.5rem;
+}
+
+.rings h2 {
+  z-index: 1;
+  position: relative;
+  margin-left: 700px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+.rings p {
+  z-index: 1;
+  position: relative;
+  margin-left: 700px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  z-index: 1;
+  position: relative;
+  margin-left: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 100px;
+  margin-bottom: -100px;
+  border: 1px solid rgb(255, 213, 0);
+  color: #fff;
+  padding: 16px;
+  font-size: 1rem;
+  border-radius: 50px;
+  width: 150px;
+  background-color: transparent;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #000000;
+}
+
+button:hover {
+  background-color: rgb(199, 167, 2);
+  color: #000000;
+  text-decoration: none;
+}
