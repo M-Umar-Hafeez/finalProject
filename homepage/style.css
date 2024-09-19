@@ -193,3 +193,73 @@ button:hover {
   color: #000000;
   text-decoration: none;
 }
+
+.necklace {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  margin-top: 170px;
+  margin-left: 40px;
+}
+
+.necklace img{
+  width: 420px;
+  height: 570px;
+}
+
+.distext{
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.distext img{
+  width: 410px;
+  height: 570px;
+  filter: contrast(105%);
+  margin-left: 400px;
+  margin-top: -570px;
+}
+
+.distext h1{
+  z-index: 1;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-left: -410px;
+  margin-top: -480px;
+}
+
+.distext h2{
+  z-index: 1;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-left: -370px;
+  margin-top: -330px;
+}
+
+.distext p{
+  z-index: 1;
+  position: relative;
+  margin-left: -375px;
+  margin-top: -250px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.distext .linee{
+  z-index: 1;
+  position: relative;
+  margin-left: -127px;
+  margin-top: -275px;
+}
+
+.distext .butt2{
+  z-index: 1;
+  position: relative;
+  margin-left: -375px;
+  width: 200px;
+  height: 58px;
+  margin-top: -129px;
+}
