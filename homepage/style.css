@@ -60,7 +60,6 @@ body {
 
 .bg {
   display: flex;
-  /* z-index: 1; */
   position: absolute;
 }
 
@@ -92,7 +91,7 @@ body {
   color: #ffd700;
 }
 
-.cart a {
+.cart .carta {
   color: #ffd700;
   text-decoration: none;
   font-size: 17px;
