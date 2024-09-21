@@ -271,16 +271,16 @@ button:hover {
   margin-top: -135px;
 }
 
-.bgspace{
+.bg3{
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.bgspace img{
+.bg3 img{
   width: 392px;
   height: 570px;
-  filter: contrast(91%);
+  filter: contrast(80%);
   margin-left: 830px;
   margin-top: -570px;
   border-radius: 20px;
@@ -329,4 +329,32 @@ button:hover {
   font-size: 2rem;
   margin-top: -280px;
   margin-left: -300px;
+}
+
+.bg4{
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.bg4 img{
+  width: 392px;
+  height: 570px;
+  filter: contrast(90%);
+  margin-left: 40px;
+  margin-top: 53px;
+}
+
+.manpic{
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.manpic img{
+  width: 292px;
+  height: 400px;
+  filter: contrast(90%);
+  margin-left: 40px;
+  margin-top: 53px;
 }
