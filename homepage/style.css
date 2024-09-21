@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url(./images/BG.jpg);
   color: #fff;
 }
 
@@ -59,18 +58,18 @@ body {
   font-weight: bold;
 }
 
-/* .bg {
+.bg {
   display: flex;
   position: absolute;
 }
 
 .bg img {
   margin-top: -190px;
-  filter: brightness(35%);
+  filter: brightness(45%);
   width: 100%;
-  height: 100%;
+  height: 102%;
   position: fixed;
-} */
+}
 
 .nav-links {
   list-style: none;
@@ -341,20 +340,21 @@ button:hover {
   width: 392px;
   height: 570px;
   filter: contrast(90%);
-  margin-left: 40px;
+  margin-left: 475px;
   margin-top: 53px;
 }
 
-.manpic{
+.girlpic{
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.manpic img{
-  width: 292px;
-  height: 400px;
-  filter: contrast(90%);
+.girlpic img{
+  width: 392px;
+  height: 570px;
+  filter: contrast(130%);
   margin-left: 40px;
-  margin-top: 53px;
+  margin-top: -570px;
+  border-radius: 20px;
 }
