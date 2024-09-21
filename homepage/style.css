@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-image: url(./images/BG.jpg);
   color: #fff;
 }
 
@@ -58,7 +59,7 @@ body {
   font-weight: bold;
 }
 
-.bg {
+/* .bg {
   display: flex;
   position: absolute;
 }
@@ -66,9 +67,10 @@ body {
 .bg img {
   margin-top: -190px;
   filter: brightness(35%);
-  width: 1263px;
+  width: 100%;
+  height: 100%;
   position: fixed;
-}
+} */
 
 .nav-links {
   list-style: none;
@@ -115,6 +117,7 @@ body {
   z-index: 1;
   position: relative;
   display: inline;
+  padding: 0px;
 }
 
 .under1 {
@@ -123,6 +126,8 @@ body {
   width: 93.7%;
   height: 50%;
   filter: contrast(85%);
+  border: #ffffff 0px solid;
+  border-radius: 20px;
 }
 
 .rings img {
@@ -205,6 +210,7 @@ button:hover {
   width: 420px;
   height: 570px;
   filter: contrast(92.5%);
+  border-radius: 20px 0px 0px 20px;
 }
 
 .distext{
@@ -219,6 +225,7 @@ button:hover {
   filter: contrast(97%);
   margin-left: 400px;
   margin-top: -570px;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .distext h1{
@@ -276,6 +283,7 @@ button:hover {
   filter: contrast(91%);
   margin-left: 830px;
   margin-top: -570px;
+  border-radius: 20px;
 }
 
 .eartops{
