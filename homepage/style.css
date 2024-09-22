@@ -351,11 +351,12 @@ button:hover {
 }
 
 .bg4 img{
-  width: 392px;
+  width: 747px;
   height: 570px;
   filter: contrast(90%);
   margin-left: 475px;
   margin-top: 53px;
+  border-radius: 20px;
 }
 
 .girlpic{
@@ -367,8 +368,60 @@ button:hover {
 .girlpic img{
   width: 392px;
   height: 570px;
-  filter: contrast(130%);
+  filter: contrast(140%);
   margin-left: 40px;
   margin-top: -570px;
   border-radius: 20px;
+}
+
+.girlpic h1{
+  z-index: 1;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-left: -340px;
+  margin-top: -265px; 
+}
+
+.girlpic button{
+  height: 55px;
+  width: 160px;
+  z-index: 1;
+  position: relative;
+  margin-left: -225px;
+  margin-top: -110px;
+}
+
+.manpic{
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.manpic img{
+  width: 392px;
+  height: 570px;
+  /* filter: contrast(90%); */
+  margin-left: 830px;
+  margin-top: -570px;
+  border-radius: 20px;
+}
+
+.manpic h1{
+  z-index: 1;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-left: -700px;
+  margin-top: -450px;
+}
+
+.manpic p{
+  z-index: 1;
+  position: relative;
+  margin-left: -375px;
+  margin-top: -250px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
