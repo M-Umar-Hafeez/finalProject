@@ -64,10 +64,10 @@ body {
 }
 
 .bg img {
-  margin-top: -190px;
+  margin-top: -210px;
   filter: brightness(45%);
   width: 100%;
-  height: 102%;
+  height: 104%;
   position: fixed;
 }
 
@@ -91,20 +91,45 @@ body {
 .nav-links a:hover {
   color: #ffd700;
 }
-.cartandsearch{
+
+.cartandsearch {
   display: inline-flex;
 }
-.cartandsearch .search{
-  margin-right: 50px;
+
+.cartandsearch .search {
+  margin-right: 130px;
+  margin-top: -38px;
+}
+
+.mains a #sicon{
+  margin-top: 5px;
+  margin-left: 5px;
 
 }
+
 .cartandsearch .search #srch {
- border: white solid 2px;
- background-color: ;
+  display: flex;
+  border: white solid 2px;
+  background-color: rgb(192, 192, 192);
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+  font-size: medium;
+  color: #520404;
+  margin-top: -39px;
+  margin-left: -175px;
+  width: 175px;
 }
-.cartandsearch .search #sicon {
 
+.mains{
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  position: relative;
+  margin-top: 10px;
 }
+
 
 .cart .carta {
   color: #ffd700;
@@ -219,20 +244,20 @@ button:hover {
   margin-left: 40px;
 }
 
-.necklace img{
+.necklace img {
   width: 420px;
   height: 570px;
   filter: contrast(92.5%);
   border-radius: 20px 0px 0px 20px;
 }
 
-.distext{
+.distext {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.distext img{
+.distext img {
   width: 390px;
   height: 570px;
   filter: contrast(97%);
@@ -241,7 +266,7 @@ button:hover {
   border-radius: 0px 20px 20px 0px;
 }
 
-.distext h1{
+.distext h1 {
   z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
@@ -250,7 +275,7 @@ button:hover {
   margin-top: -480px;
 }
 
-.distext h2{
+.distext h2 {
   z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
@@ -259,7 +284,7 @@ button:hover {
   margin-top: -330px;
 }
 
-.distext p{
+.distext p {
   z-index: 1;
   position: relative;
   margin-left: -375px;
@@ -268,14 +293,14 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.distext .linee{
+.distext .linee {
   z-index: 1;
   position: relative;
   margin-left: -127px;
   margin-top: -275px;
 }
 
-.distext .butt2{
+.distext .butt2 {
   z-index: 1;
   position: relative;
   margin-left: -375px;
@@ -284,13 +309,13 @@ button:hover {
   margin-top: -135px;
 }
 
-.bg3{
+.bg3 {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.bg3 img{
+.bg3 img {
   width: 392px;
   height: 570px;
   filter: contrast(80%);
@@ -299,33 +324,33 @@ button:hover {
   border-radius: 20px;
 }
 
-.eartops{
+.eartops {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.eartops img{
+.eartops img {
   width: 168px;
   height: 130px;
   margin-left: 890px;
   margin-top: -440px;
 }
 
-.eartops2{
+.eartops2 {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.eartops2 img{
+.eartops2 img {
   width: 95px;
   height: 125px;
   margin-left: 1050px;
   margin-top: -520px;
 }
 
-.eartops2 button{
+.eartops2 button {
   height: 55px;
   width: 160px;
   z-index: 1;
@@ -334,7 +359,7 @@ button:hover {
   margin-top: -120px;
 }
 
-.eartops2 h1{
+.eartops2 h1 {
   z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
@@ -344,13 +369,13 @@ button:hover {
   margin-left: -300px;
 }
 
-.bg4{
+.bg4 {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.bg4 img{
+.bg4 img {
   width: 747px;
   height: 570px;
   filter: contrast(90%);
@@ -359,13 +384,13 @@ button:hover {
   border-radius: 20px;
 }
 
-.girlpic{
+.girlpic {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.girlpic img{
+.girlpic img {
   width: 392px;
   height: 570px;
   filter: contrast(140%);
@@ -374,17 +399,17 @@ button:hover {
   border-radius: 20px;
 }
 
-.girlpic h1{
+.girlpic h1 {
   z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 2.2rem;
   margin-left: -340px;
-  margin-top: -265px; 
+  margin-top: -265px;
 }
 
-.girlpic button{
+.girlpic button {
   height: 55px;
   width: 160px;
   z-index: 1;
@@ -393,13 +418,13 @@ button:hover {
   margin-top: -110px;
 }
 
-.manpic{
+.manpic {
   display: flex;
   z-index: 1;
   position: relative;
 }
 
-.manpic img{
+.manpic img {
   width: 392px;
   height: 570px;
   /* filter: contrast(90%); */
@@ -408,20 +433,29 @@ button:hover {
   border-radius: 20px;
 }
 
-.manpic h1{
+.manpic h1 {
   z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
   margin-left: -700px;
-  margin-top: -450px;
+  margin-top: -420px;
 }
 
-.manpic p{
+.manpic p {
   z-index: 1;
   position: relative;
-  margin-left: -375px;
-  margin-top: -250px;
+  margin-left: -176px;
+  margin-top: -340px;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.manpic button{
+  height: 55px;
+  width: 160px;
+  z-index: 1;
+  position: relative;
+  margin-left: -225px;
+  margin-top: -205px;
 }
