@@ -91,6 +91,20 @@ body {
 .nav-links a:hover {
   color: #ffd700;
 }
+.cartandsearch{
+  display: inline-flex;
+}
+.cartandsearch .search{
+  margin-right: 50px;
+
+}
+.cartandsearch .search #srch {
+ border: white solid 2px;
+ background-color: ;
+}
+.cartandsearch .search #sicon {
+
+}
 
 .cart .carta {
   color: #ffd700;
