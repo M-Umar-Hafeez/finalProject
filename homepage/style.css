@@ -112,23 +112,25 @@ body {
   border: white solid 2px;
   background-color: transparent;
   border: none;
-  border-bottom: white 2px solid;
-  border-radius: 5px 0px 0px 5px;
+  /* border-left: rgb(0, 0, 0) 2px solid; */
+  border-bottom:rgb(0, 0, 0) 2px solid ;
+  border-radius: 10px 10px 10px 10px;
   padding: 10px;
   font-size: medium;
   color: #ffffff;
-  margin-top: -39px;
+  margin-top: -40px;
   margin-left: -175px;
-  width: 175px;
+  width: 215px;
 }
 
 .mains{
+  border-radius: 0px 10px 10px 0px ;
   background-color: #000000;
   width: 40px;
   height: 40px;
   z-index: 1;
   position: relative;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 
@@ -222,7 +224,7 @@ button {
   background-color: transparent;
 }
 
-button a {
+a button  {
   text-decoration: none;
   color: #fff;
 }
@@ -301,7 +303,14 @@ button:hover {
   margin-top: -275px;
 }
 
-.distext .butt2 {
+a{
+  text-decoration: none;
+}
+
+.butt2 {
+  padding-left: 34px;
+  padding-top: 18px;
+  display: flex;
   z-index: 1;
   position: relative;
   margin-left: -375px;
@@ -352,6 +361,9 @@ button:hover {
 }
 
 .eartops2 button {
+  padding-left: 32px;
+  padding-top: 17px;
+  display: flex;
   height: 55px;
   width: 160px;
   z-index: 1;
@@ -411,6 +423,9 @@ button:hover {
 }
 
 .girlpic button {
+  padding-left: 32px;
+  padding-top: 17px;
+  display: flex;
   height: 55px;
   width: 160px;
   z-index: 1;
@@ -453,10 +468,61 @@ button:hover {
 }
 
 .manpic button{
+  padding-left: 32px;
+  padding-top: 17px;
+  display: flex;
   height: 55px;
   width: 160px;
   z-index: 1;
   position: relative;
   margin-left: -225px;
   margin-top: -205px;
+}
+
+.banner{
+  display: flex;
+  z-index: 1;
+  position: relative;
+  width: 1181px;
+  height: 135px;
+  background-color:#fad259;
+  margin-left: 40px;
+  margin-top: 30px;
+  /* border-radius: 20px; */
+}
+
+.text-section h1{
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.9rem;
+  margin-top: 42px;
+  margin-left: 40px;
+}
+
+.text-section h2{
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  margin-left: 630px;
+  margin-top: -45px;
+}
+
+.text-section a .join-button{
+  display: flex;
+  z-index: 1;
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  margin-top: -50px;
+  margin-left: 960px;
+  padding-left: 32px;
+  padding-top: 17px;
+  width: 165px;
+}
+
+a .join-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-decoration: none;
 }
