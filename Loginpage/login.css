@@ -122,7 +122,7 @@ body {
   display: block;
 }
 
-.downarrow{
+.downarrow {
   display: flex;
   margin-left: 100px;
   font-size: medium;
@@ -138,10 +138,9 @@ body {
   margin-top: -38px;
 }
 
-.mains a #sicon{
+.mains a #sicon {
   margin-top: 5px;
   margin-left: 5px;
-
 }
 
 .cartandsearch .search #srch {
@@ -149,7 +148,7 @@ body {
   border: white solid 2px;
   background-color: white;
   border: none;
-  border-bottom:rgb(0, 0, 0) 2px solid ;
+  border-bottom: rgb(0, 0, 0) 2px solid;
   border-radius: 10px 13px 10px 13px;
   padding: 10px;
   font-size: medium;
@@ -159,8 +158,8 @@ body {
   width: 214.5px;
 }
 
-.mains{
-  border-radius: 0px 10px 10px 0px ;
+.mains {
+  border-radius: 0px 10px 10px 0px;
   background-color: #000000;
   width: 40px;
   height: 40px;
@@ -168,7 +167,6 @@ body {
   position: relative;
   margin-top: 35px;
 }
-
 
 .cart .carta {
   color: #ffd700;
@@ -188,4 +186,94 @@ body {
   width: 25px;
   height: 23px;
   margin-bottom: -5px;
+}
+
+.container {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.header {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.login-box {
+  z-index: 1;
+  position: relative;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.input-group i.show-password {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.remember-me {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.btn {
+  z-index: 1;
+  position: relative;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800;
 }
