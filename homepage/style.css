@@ -110,12 +110,13 @@ body {
 .cartandsearch .search #srch {
   display: flex;
   border: white solid 2px;
-  background-color: rgb(192, 192, 192);
+  background-color: transparent;
   border: none;
+  border-bottom: white 2px solid;
   border-radius: 5px 0px 0px 5px;
   padding: 10px;
   font-size: medium;
-  color: #520404;
+  color: #ffffff;
   margin-top: -39px;
   margin-left: -175px;
   width: 175px;
