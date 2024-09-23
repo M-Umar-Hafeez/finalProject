@@ -92,6 +92,42 @@ body {
   color: #ffd700;
 }
 
+.navbar .nav-links .dropdown {
+  display: inline-block;
+}
+
+.navbar .nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .nav-links .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .nav-links .dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.downarrow{
+  display: flex;
+  margin-left: 100px;
+  font-size: medium;
+  margin-top: -19px;
+}
+
 .cartandsearch {
   display: inline-flex;
 }
