@@ -208,6 +208,7 @@ body {
 }
 
 button {
+  transition: color 0.8s; 
   cursor: pointer;
   z-index: 1;
   position: relative;
@@ -233,7 +234,7 @@ a:hover {
   color: #000000;
 }
 
-button:hover {
+button:hover { 
   background-color: rgb(199, 167, 2);
   color: #000000;
   text-decoration: none;
