@@ -15,7 +15,7 @@
     />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
   </head>
-  <body>
+  <body> 
     <div class="logo">
       <img src="./images/LOGO.png" alt="Logo" />
       <hr class="line" />
@@ -66,39 +66,23 @@
     <div class="bg">
       <img src="./images/BG.jpg" alt="" />
     </div>
-    <div class="container">
-      <div class="header">
-        <h1>My account</h1>
-        <p>Home » My account</p>
-      </div>
+    <div class="login-container">
       <div class="login-box">
-        <h2>Login</h2>
-        <form action="#" method="POST">
-          <div class="input-group">
-            <input
-              type="text"
-              name="username"
-              placeholder="Username or email address"
-              required
-            />
-          </div>
-          <div class="input-group">
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-            <i class="fi fi-sr-eye-crossed"></i>
-            <!-- Add an eye icon for password visibility -->
-          </div>
-          <div class="remember-me">
-            <input type="checkbox" id="remember" name="remember" />
-            <label for="remember">Remember me</label>
-          </div>
-          <button type="submit" class="btn">LOG IN</button>
-        </form>
+          <h2>Login</h2>
+          <form>
+              <div class="input-group">
+                  <input type="text" placeholder="Username or email address *Required" required>
+              </div>
+              <div class="input-group">
+                  <input type="password" placeholder="Password *Required" required>
+              </div>
+              <div class="remember-me">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+              </div>
+              <button type="submit" class="login-button">LOG IN</button>
+          </form>
       </div>
-    </div>
+  </div>
   </body>
 </html>
