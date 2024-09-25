@@ -103,21 +103,26 @@ body {
 
 .mains a #sicon{
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  background-position: center;
+  /* border: 12px  rgba(180, 37, 37, 0.699); */
+  /* background-color:  rgba(0, 0, 0, 0); */
 
 }
 
 .cartandsearch .search #srch {
   display: flex;
-  border: white solid 2px;
+  border: rgb(255, 255, 255) solid 2px;
   background-color: transparent;
   border: none;
   /* border-left: rgb(0, 0, 0) 2px solid; */
-  border-bottom:rgb(0, 0, 0) 2px solid ;
+  border:rgb(160, 163, 164) 2px solid ;
   border-radius: 10px 10px 10px 10px;
   padding: 10px;
   font-size: medium;
-  color: #ffffff;
+  color: #1f1d1d;
   margin-top: -40px;
   margin-left: -175px;
   width: 215px;
@@ -125,7 +130,7 @@ body {
 
 .mains{
   border-radius: 0px 10px 10px 0px ;
-  background-color: #000000;
+  background-color: rgb(50, 49, 49);
   width: 40px;
   height: 40px;
   z-index: 1;
