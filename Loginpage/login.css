@@ -195,6 +195,16 @@ body {
   height: 100%;
 }
 
+.bglogin{
+  z-index: 1;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  width: 1182px;
+  height: 600px;
+  margin-top: 50px;
+}
+
 .login-box {
   z-index: 1;
   position: relative;
@@ -202,12 +212,12 @@ body {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 600px;
+  width: 530px;
   height: 500px;
   text-align: center;
   color: #fff;
   margin-top: 50px;
-  margin-left: 300px;
+  margin-left: 320px;
   border: 1px solid #555;
 }
 
@@ -275,12 +285,96 @@ a .login-button:hover {
   color: #111;
 }
 
-.bglogin{
-  z-index: 1;
+.footer {
   position: relative;
-  background-color: #1a1a1a;
-  border-radius: 20px;
-  width: 1200px;
-  height: 600px;
-  margin-top: 50px;
+  z-index: 1;
+  margin-top: 80px;
+  background-color: #111; 
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+}
+
+.footer-column h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #F9D876;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+.footer-column ul li a:hover {
+  color: #F9D876;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  width: 93%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #F9D876;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
 }
