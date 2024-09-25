@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Meritorious Jewellry || Women's and Men's Fashions.</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
   </head>
   <body>
     <div class="logo">
@@ -16,10 +18,16 @@
     <br /><br />
     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="./Index.html">Home</a></li>
         <li><a href="../Aboutpage/about.html">About Us</a></li>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">My account</a></li>
+        <li><a href="../storepage/store.html">Store</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="">My account<i class="downarrow fi fi-ts-angle-down"></i> </a>
+          <div class="dropdown-content">
+            <a href="../Loginpage/login.html">Log In</a>
+            <a href="../Signuppage/signup.html">Sign Up</a>
+        </div>
+        </li>
         <li><a href="../Contactpage/contact.html">Contact Us</a></li>
       </ul>
       <div class="cartandsearch">
@@ -124,6 +132,44 @@
           <a href=""><button class="join-button">JOIN TODAY</button></a>
       </div>
   </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="../Contactpage/contact.html">Contact Us</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="../Aboutpage/about.html">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Jewelry Care Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-column newsletter">
+            <h4>Join Our Page</h4>
+            <p>Sign up for the latest updates on new arrivals and exclusive offers.</p>
+            <input type="email" placeholder="Enter your email">
+            <div class="social-icons">
+                <a href="#"><i class="fi fi-brands-facebook"></i></a>
+                <a href="#"><i class="fi fi-brands-instagram"></i></a>
+                <a href="#"><i class="fi fi-brands-pinterest"></i></a>
+                <a href="#"><i class="fi fi-brands-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
+    </div>
+</footer>
     <script src="app.js"></script>
   </body>
 </html>
