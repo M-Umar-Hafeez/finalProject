@@ -203,24 +203,42 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 600px;
+  height: 500px;
   text-align: center;
   color: #fff;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 300px;
   border: 1px solid #555;
 }
 
-h2 {
+.login-box h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.input-group {
-  margin-bottom: 20px;
+.input-group1 {
+  margin-top: 70px;
 }
 
-.input-group input {
+.input-group2 {
+  margin-top: 35px;
+}
+
+.input-group1 input {
   width: 100%;
-  padding: 10px;
+  padding: 17px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+}
+
+.input-group2 input {
+  width: 100%;
+  padding: 17px;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -232,26 +250,37 @@ h2 {
 .remember-me {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 35px;
 }
 
 .remember-me input {
   margin-right: 10px;
 }
 
-.login-button {
+a .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #222;
+  margin-top: 35px;
+  background-color: transparent;
   border: 1px solid #d1a945;
-  border-radius: 5px;
-  color: #d1a945;
+  border-radius: 20px;
+  color: #ffffff;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.login-button:hover {
+a .login-button:hover {
   background-color: #d1a945;
   color: #111;
+}
+
+.bglogin{
+  z-index: 1;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  width: 1200px;
+  height: 600px;
+  margin-top: 50px;
 }
