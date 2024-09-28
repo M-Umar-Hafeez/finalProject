@@ -2,36 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 body {
   font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #0c0b0b;
 }
-.logo h2 {
-  margin-left: -167px;
-  margin-top: 10px;
+
+.logo {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1%;
+  margin-top: 2%;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-top: 2%;
+  outline: 0;
+}
+
+.one h3 {
   font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-}
-
-.logo h4 {
-  margin-left: -120px;
-  margin-top: 69px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-}
-
-.line {
-  margin-left: 10px;
-  margin-top: 42px;
-  width: 167px;
-}
-
-.logo span {
-  color: #ffd700;
-  font-size: 24px;
   font-weight: bold;
 }
 
@@ -44,37 +47,10 @@ body {
   position: relative;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  z-index:1 ;
-  position: relative;
-}
-
-.logo img {
-  width: 60px;
-  height: 60px;
-  margin-left: 500px;
-  margin-top: 28px;
-}
-
-
-.bg {
-  display: flex;
-  position: absolute;
-}
-
-/* .bg img {
-  margin-top: -210px;
-  filter: brightness(45%);
-  width: 100%;
-  height: 104%;
-  position: fixed;
-} */
-
 .nav-links {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -84,13 +60,13 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(25, 22, 22);
+  color: rgb(57, 53, 53);
   font-size: 17px;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #434133;
+  color: #a2a4a7;
 }
 
 .navbar .nav-links .dropdown {
@@ -124,7 +100,7 @@ body {
   display: block;
 }
 
-.downarrow{
+.downarrow {
   display: flex;
   margin-left: 100px;
   font-size: medium;
@@ -132,62 +108,35 @@ body {
 }
 
 .cartandsearch {
-  display: inline-flex;
-}
-
-.cartandsearch .search {
-  margin-right: 130px;
-  margin-top: -38px;
-}
-
-.mains a #sicon{
-  margin-top: 5px;
-  margin-left: 10px;
-  height: 20px;
-  width: 20px;
-  background-position: center;
-  /* border: 12px  rgba(180, 37, 37, 0.699); */
-  /* background-color:  rgba(0, 0, 0, 0); */
-
-}
-
-.cartandsearch .search #srch {
   display: flex;
-  border: rgb(255, 255, 255) solid 2px;
-  background-color: transparent;
-  border: none;
-  /* border-left: rgb(0, 0, 0) 2px solid; */
-  border:rgb(160, 163, 164) 2px solid ;
-  border-radius: 10px 10px 10px 10px;
-  padding: 10px;
-  font-size: medium;
-  color: #1f1d1d;
-  border: white solid 2px;
-  background-color: white;
-  border: none;
-  border-bottom:rgb(0, 0, 0) 2px solid ;
-  border-radius: 10px 13px 10px 13px;
-  padding: 10px;
-  font-size: medium;
-  color: #470000;
-  margin-top: -40px;
-  margin-left: -175px;
-  width: 214.5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.mains{
-  border-radius: 0px 10px 10px 0px ;
-  background-color: rgb(50, 49, 49);
+.search {
+  display: flex;
+  width: 60%;
+}
+
+#sicon {
   width: 40px;
   height: 40px;
-  z-index: 1;
-  position: relative;
-  margin-top: 35px;
+  background-color: #000;
+  border-radius: 10px 13px 10px 13px;
 }
 
+#srch {
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  color: #dee4df;
+  background-color: black;
+  border-radius: 10px 13px 10px 13px;
+  font-size: medium;
+}
 
 .cart .carta {
-  color: #ffd700;
+  color: #343844;
   text-decoration: none;
   width: 175px;
   font-size: 17px;
@@ -215,23 +164,24 @@ body {
 }
 
 .under1 {
-  margin-top: 50px;
-  margin-left: 40px;
+  margin-top: 6%;
+  margin-left: 3%;
   width: 93.7%;
   height: 50%;
   filter: contrast(85%);
   border: #ffffff 0px solid;
   border-radius: 20px;
+
 }
 
 .rings img {
   z-index: 1;
   position: relative;
-  margin-top: -480px;
+  margin-top: -40%;
   margin-left: 80px;
   display: flex;
-  width: 570px;
-  height: 380px;
+  width: 30%;
+  height: 35%;
   filter: contrast(79%);
   /* filter: saturate(30%); */
 }
@@ -239,32 +189,37 @@ body {
 .rings h1 {
   z-index: 1;
   position: relative;
-  margin-left: 700px;
-  margin-top: -350px;
+  margin-left: 50%;
+  margin-top: -15%;
   font-family: "Times New Roman", Times, serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
+  color: rgb(236, 211, 211);
 }
 
 .rings h2 {
   z-index: 1;
   position: relative;
-  margin-left: 700px;
+  margin-left: 55%;
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
+  color: rgb(236, 211, 211);
+
 }
 
 .rings p {
   z-index: 1;
   position: relative;
-  margin-left: 700px;
+  margin-left: 55%;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(236, 211, 211);
+
 }
 
 button {
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
   cursor: pointer;
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
   margin-left: 700px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -279,12 +234,12 @@ button {
   background-color: transparent;
 }
 
-a button  {
+a button {
   text-decoration: none;
   color: #fff;
 }
 
-button:hover { 
+button:hover {
   background-color: #d1a945;
   color: #000000;
   text-decoration: none;
@@ -327,6 +282,8 @@ button:hover {
   font-size: 3rem;
   margin-left: -410px;
   margin-top: -480px;
+  color: rgb(236, 211, 211);
+
 }
 
 .distext h2 {
@@ -336,6 +293,8 @@ button:hover {
   font-size: 2rem;
   margin-left: -370px;
   margin-top: -330px;
+  color: rgb(236, 211, 211);
+
 }
 
 .distext p {
@@ -343,6 +302,8 @@ button:hover {
   position: relative;
   margin-left: -375px;
   margin-top: -250px;
+  color: rgb(236, 211, 211);
+
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -352,9 +313,11 @@ button:hover {
   position: relative;
   margin-left: -127px;
   margin-top: -275px;
+  color: rgb(236, 211, 211);
+
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -369,6 +332,8 @@ a{
   width: 200px;
   height: 58px;
   margin-top: -135px;
+  color: rgb(236, 211, 211);
+
 }
 
 .bg3 {
@@ -423,6 +388,8 @@ a{
   position: relative;
   margin-left: -256px;
   margin-top: -120px;
+  color: rgb(236, 211, 211);
+
 }
 
 .eartops2 h1 {
@@ -433,6 +400,8 @@ a{
   font-size: 2rem;
   margin-top: -280px;
   margin-left: -300px;
+  color: rgb(236, 211, 211);
+
 }
 
 .bg4 {
@@ -473,6 +442,8 @@ a{
   font-size: 2.2rem;
   margin-left: -340px;
   margin-top: -265px;
+  color: rgb(236, 211, 211);
+
 }
 
 .girlpic button {
@@ -486,6 +457,8 @@ a{
   position: relative;
   margin-left: -225px;
   margin-top: -110px;
+  color: rgb(236, 211, 211);
+
 }
 
 .manpic {
@@ -510,6 +483,8 @@ a{
   font-size: 3rem;
   margin-left: -700px;
   margin-top: -420px;
+  color: rgb(236, 211, 211);
+
 }
 
 .manpic p {
@@ -518,10 +493,12 @@ a{
   margin-left: -176px;
   margin-top: -340px;
   font-weight: lighter;
+  color: rgb(236, 211, 211);
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.manpic button{
+.manpic button {
   cursor: pointer;
   padding-left: 32px;
   padding-top: 17px;
@@ -534,27 +511,29 @@ a{
   margin-top: -205px;
 }
 
-.banner{
+.banner {
   display: flex;
   z-index: 1;
   position: relative;
   width: 1181px;
   height: 135px;
-  background-color:#fad259;
+  background-color: #fad259;
   margin-left: 40px;
   margin-top: 30px;
   /* border-radius: 20px; */
 }
 
-.text-section h1{
+.text-section h1 {
   color: #000000;
   font-family: "Times New Roman", Times, serif;
   font-size: 2.9rem;
   margin-top: 42px;
   margin-left: 40px;
+  /* color: rgb(236, 211, 211); */
+
 }
 
-.text-section h2{
+.text-section h2 {
   color: #000000;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.3rem;
@@ -562,7 +541,7 @@ a{
   margin-top: -45px;
 }
 
-.text-section a .join-button{
+.text-section a .join-button {
   cursor: pointer;
   display: flex;
   z-index: 1;
@@ -586,7 +565,7 @@ a .join-button:hover {
 .footer {
   position: relative;
   z-index: 1;
-  background-color: #111; 
+  background-color: #111;
   color: #fff;
   padding: 40px 0;
 }
@@ -644,7 +623,7 @@ a .join-button:hover {
   width: 93%;
   margin-bottom: 10px;
   border-radius: 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 
@@ -675,3 +654,10 @@ a .join-button:hover {
   margin: 0;
   font-size: 0.9em;
 }
+
+/* body{
+  background: rgba(128, 128, 128,0.5);
+  color: ;
+} */
+
+@media screen and (max-width:500px) {}
