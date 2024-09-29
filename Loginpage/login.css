@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #fff;
+  background-color: #a1a1a1;
 }
 
 .navbar {
@@ -16,6 +17,7 @@ body {
   padding: 15px 30px;
   z-index: 1;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .logo {

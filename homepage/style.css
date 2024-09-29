@@ -2,71 +2,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
-  font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #0c0b0b;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  position: relative;
-}
-
-.one {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 1%;
-  margin-top: 2%;
-}
-
-.logo img {
-  width: 60px;
-  height: 60px;
-  margin-top: 2%;
-  outline: 0;
-}
-
-.one h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #a1a1a1;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+  padding: 15px 30px;
   z-index: 1;
   position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-left: 500px;
+  margin-top: 28px;
+}
+
+.logo h2 {
+  margin-left: -167px;
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+}
+
+.logo h4 {
+  margin-left: -120px;
+  margin-top: 69px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.line {
+  margin-left: 10px;
+  margin-top: 42px;
+  width: 167px;
+}
+
+.logo span {
+  color: #ffd700;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .nav-links li {
+  margin-top: 5%;
   margin-left: 27px;
   margin-right: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(57, 53, 53);
+  color: white;
   font-size: 17px;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #a2a4a7;
+  color: #ffd700;
 }
 
 .navbar .nav-links .dropdown {
@@ -77,14 +91,14 @@ body {
   display: none;
   position: absolute;
   margin-top: 3px;
-  background-color: #f3eeee;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.589);
   z-index: 1;
 }
 
 .navbar .nav-links .dropdown-content a {
-  color: rgb(9, 8, 8);
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -93,7 +107,6 @@ body {
 
 .navbar .nav-links .dropdown-content a:hover {
   background-color: #575757;
-  color: white;
 }
 
 .navbar .nav-links .dropdown:hover .dropdown-content {
@@ -102,43 +115,57 @@ body {
 
 .downarrow {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 100px;
   font-size: medium;
   margin-top: -19px;
 }
 
 .cartandsearch {
+  margin-top: 3%;
+  display: inline-flex;
+}
+
+.cartandsearch .search {
+  margin-right: 130px;
+  margin-top: -38px;
+}
+
+.mains a #sicon {
+  margin-top: 5px;
+  /* margin-left: px; */
+}
+
+.cartandsearch .search #srch {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  border: white solid 2px;
+  background-color: white;
+  border: none;
+  border-bottom: rgb(0, 0, 0) 2px solid;
+  border-radius: 10px 13px 10px 13px;
+  padding: 10px;
+  font-size: medium;
+  color: #470000;
+  margin-top: -40px;
+  margin-left: -175px;
+  width: 214.5px;
 }
 
-.search {
-  display: flex;
-  width: 60%;
-}
-
-#sicon {
+.mains button{
+  border-radius: 0px 10px 10px 0px;
+  background-color: #000000;
+  border: none;
   width: 40px;
   height: 40px;
-  background-color: #000;
-  border-radius: 10px 13px 10px 13px;
-}
-
-#srch {
-  width: 80%;
-  display: flex;
-  padding: 10px;
-  color: #dee4df;
-  background-color: black;
-  border-radius: 10px 13px 10px 13px;
-  font-size: medium;
+  z-index: 1;
+  position: relative;
+  margin-top: 38px;
 }
 
 .cart .carta {
-  color: #343844;
+  color: #ffd700;
   text-decoration: none;
-  width: 175px;
   font-size: 17px;
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -156,6 +183,23 @@ body {
   margin-bottom: -5px;
 }
 
+.cart{
+  font-size: large;
+  color: #f0b800;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: -7%;
+  border: none;
+  background-color: #4b4b4b;
+  transition: none;
+  padding-left: 12.7px;
+  padding-bottom: 5px;
+  width: 150px;
+  height: 43px;
+  border-radius: 15px;
+}
+
+
 .firstdiv {
   /* z-index: 1; */
   position: relative;
@@ -164,14 +208,13 @@ body {
 }
 
 .under1 {
-  margin-top: 6%;
+  margin-top: 3%;
   margin-left: 3%;
   width: 93.7%;
   height: 50%;
   filter: contrast(85%);
   border: #ffffff 0px solid;
   border-radius: 20px;
-
 }
 
 .rings img {
@@ -180,17 +223,17 @@ body {
   margin-top: -40%;
   margin-left: 80px;
   display: flex;
-  width: 30%;
-  height: 35%;
-  filter: contrast(79%);
+  flex-wrap: wrap;
+  width: 39%;
+  filter: contrast(100%);
   /* filter: saturate(30%); */
 }
 
 .rings h1 {
   z-index: 1;
   position: relative;
-  margin-left: 50%;
-  margin-top: -15%;
+  margin-left: 55%;
+  margin-top: -17%;
   font-family: "Times New Roman", Times, serif;
   font-size: 4rem;
   color: rgb(236, 211, 211);
@@ -216,7 +259,7 @@ body {
 
 }
 
-button {
+.rings button {
   transition: background-color 0.3s;
   cursor: pointer;
   /* z-index: 1; */
@@ -234,12 +277,12 @@ button {
   background-color: transparent;
 }
 
-a button {
+.rings a button {
   text-decoration: none;
   color: #fff;
 }
 
-button:hover {
+.rings button:hover {
   background-color: #d1a945;
   color: #000000;
   text-decoration: none;
@@ -247,6 +290,7 @@ button:hover {
 
 .necklace {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
   margin-top: 170px;
@@ -262,6 +306,7 @@ button:hover {
 
 .distext {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -317,27 +362,46 @@ button:hover {
 
 }
 
+
 a {
   text-decoration: none;
 }
 
 .butt2 {
+  transition: background-color 0.3s;
   cursor: pointer;
   padding-left: 34px;
   padding-top: 18px;
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
   margin-left: -375px;
   width: 200px;
   height: 58px;
   margin-top: -135px;
-  color: rgb(236, 211, 211);
+  border: 1px solid #d1a945;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.distext a .butt2 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.distext .butt2:hover {
+  background-color: #d1a945;
+  color: #000000;
+  text-decoration: none;
 }
 
 .bg3 {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -353,6 +417,7 @@ a {
 
 .eartops {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -366,6 +431,7 @@ a {
 
 .eartops2 {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -378,18 +444,36 @@ a {
 }
 
 .eartops2 button {
+  transition: background-color 0.3s;
   cursor: pointer;
   padding-left: 32px;
   padding-top: 17px;
   display: flex;
+  flex-wrap: wrap;
   height: 55px;
   width: 160px;
   z-index: 1;
   position: relative;
   margin-left: -256px;
   margin-top: -120px;
-  color: rgb(236, 211, 211);
+  border: 1px solid #d1a945;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+.eartops2 a button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.eartops2 button:hover {
+  background-color: #d1a945;
+  color: #000000;
+  text-decoration: none;
 }
 
 .eartops2 h1 {
@@ -406,6 +490,7 @@ a {
 
 .bg4 {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -421,6 +506,7 @@ a {
 
 .girlpic {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -447,22 +533,40 @@ a {
 }
 
 .girlpic button {
+  transition: background-color 0.3s;
   cursor: pointer;
   padding-left: 32px;
   padding-top: 17px;
   display: flex;
+  flex-wrap: wrap;
   height: 55px;
   width: 160px;
   z-index: 1;
   position: relative;
   margin-left: -225px;
   margin-top: -110px;
-  color: rgb(236, 211, 211);
+  border: 1px solid #d1a945;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.girlpic a button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.girlpic button:hover {
+  background-color: #d1a945;
+  color: #000000;
+  text-decoration: none;
 }
 
 .manpic {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
 }
@@ -499,20 +603,40 @@ a {
 }
 
 .manpic button {
+  transition: background-color 0.3s;
   cursor: pointer;
   padding-left: 32px;
   padding-top: 17px;
   display: flex;
+  flex-wrap: wrap;
   height: 55px;
   width: 160px;
   z-index: 1;
   position: relative;
   margin-left: -225px;
   margin-top: -205px;
+  border: 1px solid #d1a945;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.manpic a button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.manpic button:hover {
+  background-color: #d1a945;
+  color: #000000;
+  text-decoration: none;
 }
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
   width: 1181px;
@@ -542,8 +666,10 @@ a {
 }
 
 .text-section a .join-button {
+  transition: background-color 0.3s;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   position: relative;
   background-color: #000000;
@@ -554,6 +680,10 @@ a {
   padding-left: 32px;
   padding-top: 17px;
   width: 165px;
+  height: 55px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  border-radius: 50px;
 }
 
 a .join-button:hover {
@@ -613,6 +743,7 @@ a .join-button:hover {
 
 .newsletter {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -629,6 +760,7 @@ a .join-button:hover {
 
 .social-icons {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -654,10 +786,5 @@ a .join-button:hover {
   margin: 0;
   font-size: 0.9em;
 }
-
-/* body{
-  background: rgba(128, 128, 128,0.5);
-  color: ;
-} */
 
 @media screen and (max-width:500px) {}
