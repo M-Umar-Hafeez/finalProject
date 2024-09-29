@@ -135,10 +135,12 @@ body {
   font-size: medium;
 }
 
-.cart .carta {
+#carta {
   color: #343844;
+  border: #ffc42e 5px solid;
   text-decoration: none;
   width: 175px;
+  height: 50px;
   font-size: 17px;
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
