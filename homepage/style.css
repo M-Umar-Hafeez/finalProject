@@ -163,18 +163,12 @@ body {
   margin-top: 38px;
 }
 
-<<<<<<< HEAD
-.cart .carta {
-  color: #ffd700;
-  text-decoration: none;
-=======
 #carta {
   color: #343844;
   border: #ffc42e 5px solid;
   text-decoration: none;
   width: 175px;
   height: 50px;
->>>>>>> 5dc269397a17ef82ec01bf59c31411e22a3fc884
   font-size: 17px;
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
