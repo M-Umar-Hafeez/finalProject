@@ -175,12 +175,12 @@ body {
 .cart-toggle-btn {
   position: absolute;
   top: 50px;
-  right: 40px;
-  background-color: white;
-  color: #007bff;
+  right: 42px;
+  background-color: rgb(59, 59, 59);
+  color: #ffae00;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 23px;
   cursor: pointer;
   font-size: 18px;
 }
@@ -198,7 +198,7 @@ body {
 }
 
 .cart-header {
-  background-color: #007bff;
+  background-color: #273b50;
   color: white;
   padding: 20px;
   display: flex;
@@ -212,23 +212,65 @@ body {
 }
 
 .cart-content {
+  color: #555555;
   padding: 20px;
   overflow-y: auto;
 }
 
 .cart-footer {
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #dbdbdb;
   text-align: center;
 }
 
-.checkout-btn {
+.removeall-btn {
+  display: none; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
   padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: transparent;
+  width: 310px;
+  height: 45px;
+  border: 1px solid rgb(158, 21, 21);
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-footer a .removeall-btn {
+  text-decoration: none;
+  color: rgb(184, 26, 26);
+}
+
+.cart-footer .removeall-btn:hover {
+  background-color:  rgb(197, 32, 32);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.continue-btn{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: transparent;
+  width: 310px;
+  height: 45px;
+  border: 1px solid rgb(52, 119, 21);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-footer a .continue-btn {
+  text-decoration: none;
+  color: rgb(52, 119, 21);
+}
+
+.cart-footer .continue-btn:hover {
+  background-color: rgb(52, 119, 21);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .overlay {
@@ -266,8 +308,6 @@ body {
 }
 
 .firstdiv {
-  /* z-index: 1; */
-  position: relative;
   display: inline;
   padding: 0px;
 }
@@ -283,7 +323,6 @@ body {
 }
 
 .rings img {
-  z-index: 1;
   position: relative;
   margin-top: -40%;
   margin-left: 80px;
@@ -295,7 +334,6 @@ body {
 }
 
 .rings h1 {
-  z-index: 1;
   position: relative;
   margin-left: 55%;
   margin-top: -17%;
@@ -305,7 +343,6 @@ body {
 }
 
 .rings h2 {
-  z-index: 1;
   position: relative;
   margin-left: 55%;
   font-family: "Times New Roman", Times, serif;
@@ -314,7 +351,6 @@ body {
 }
 
 .rings p {
-  z-index: 1;
   position: relative;
   margin-left: 55%;
   font-weight: lighter;
@@ -325,7 +361,6 @@ body {
 .rings button {
   transition: background-color 0.3s;
   cursor: pointer;
-  /* z-index: 1; */
   position: relative;
   margin-left: 700px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -354,8 +389,6 @@ body {
 .necklace {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
-  position: relative;
   margin-top: 170px;
   margin-left: 40px;
 }
@@ -370,8 +403,6 @@ body {
 .distext {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
-  position: relative;
 }
 
 .distext img {
@@ -384,7 +415,6 @@ body {
 }
 
 .distext h1 {
-  z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
@@ -394,7 +424,6 @@ body {
 }
 
 .distext h2 {
-  z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
@@ -404,7 +433,6 @@ body {
 }
 
 .distext p {
-  z-index: 1;
   position: relative;
   margin-left: -375px;
   margin-top: -250px;
@@ -415,7 +443,6 @@ body {
 }
 
 .distext .linee {
-  z-index: 1;
   position: relative;
   margin-left: -127px;
   margin-top: -275px;
@@ -433,7 +460,6 @@ a {
   padding-top: 18px;
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
   margin-left: -375px;
   width: 200px;
@@ -461,7 +487,6 @@ a {
 .bg3 {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
 }
 
@@ -477,7 +502,6 @@ a {
 .eartops {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
 }
 
@@ -491,7 +515,6 @@ a {
 .eartops2 {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
 }
 
@@ -511,7 +534,6 @@ a {
   flex-wrap: wrap;
   height: 55px;
   width: 160px;
-  z-index: 1;
   position: relative;
   margin-left: -256px;
   margin-top: -120px;
@@ -535,7 +557,6 @@ a {
 }
 
 .eartops2 h1 {
-  z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -548,8 +569,6 @@ a {
 .bg4 {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
-  position: relative;
 }
 
 .bg4 img {
@@ -564,21 +583,18 @@ a {
 .girlpic {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
-  position: relative;
 }
 
 .girlpic img {
   width: 392px;
   height: 570px;
-  filter: contrast(140%);
+  filter: contrast(120%);
   margin-left: 40px;
   margin-top: -570px;
   border-radius: 20px;
 }
 
 .girlpic h1 {
-  z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -597,7 +613,6 @@ a {
   flex-wrap: wrap;
   height: 55px;
   width: 160px;
-  z-index: 1;
   position: relative;
   margin-left: -225px;
   margin-top: -110px;
@@ -623,7 +638,6 @@ a {
 .manpic {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
 }
 
@@ -637,7 +651,6 @@ a {
 }
 
 .manpic h1 {
-  z-index: 1;
   position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
@@ -647,13 +660,11 @@ a {
 }
 
 .manpic p {
-  z-index: 1;
   position: relative;
   margin-left: -176px;
   margin-top: -340px;
   font-weight: lighter;
   color: rgb(236, 211, 211);
-
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -666,7 +677,6 @@ a {
   flex-wrap: wrap;
   height: 55px;
   width: 160px;
-  z-index: 1;
   position: relative;
   margin-left: -225px;
   margin-top: -205px;
@@ -692,14 +702,13 @@ a {
 .banner {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
   position: relative;
   width: 1181px;
   height: 135px;
   background-color: #fad259;
   margin-left: 40px;
   margin-top: 30px;
-  /* border-radius: 20px; */
+  border-radius: 20px 20px 0px 0px;
 }
 
 .text-section h1 {
@@ -724,8 +733,6 @@ a {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
-  position: relative;
   background-color: #000000;
   color: #fff;
   border: none;
@@ -748,7 +755,6 @@ a .join-button:hover {
 
 .footer {
   position: relative;
-  z-index: 1;
   background-color: #111;
   color: #fff;
   padding: 40px 0;

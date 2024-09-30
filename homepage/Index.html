@@ -50,9 +50,9 @@
         <input type="text" id="srch" placeholder="Search......" />
       </div>
           <header class="header">
-            <button id="cartToggleBtn" class="cart-toggle-btn">Cart/$<b id="price">0.00</b>
+            <button id="cartToggleBtn" class="cart-toggle-btn"><b>Cart/$</b><b id="price">0.00</b>
               <span class="cart-icon">
-                <img src="./images/icon.png" alt="" /><sup id="citems">0</sup>
+                <img src="./images/icon.png" alt="" /><sup id="citems"><b>0</b></sup>
               </span>
             </button>
           </header>
@@ -62,13 +62,14 @@
               <span class="close-btn" id="closeBtn">&times;</span>
             </div>
             <div class="cart-content">
-              <p>Cart is empty</p>
+              <p>Your items will show here after add to cart.</p>
             </div>
             <div class="cart-footer">
-      <button class="checkout-btn" onclick="removeall()">Remove All</button>
-    </div>
-  </div>
-  <div id="overlay" class="overlay"></div>
+            <a href="../storepage/store.html"><button class="continue-btn">CONTINUE SHOPPING</button></a>
+            <a href=""><button class="removeall-btn" onclick="removeall()">REMOVE ALL</button></a>
+            </div>
+          </div>
+        <div id="overlay" class="overlay"></div>
     </div>
   </nav>
   <div class="bg">

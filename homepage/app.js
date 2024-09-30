@@ -2,6 +2,7 @@
 let totalItems = 0; 
 let totalPrice = 0.0; 
 const cartContent = document.querySelector('.cart-content');
+const removeAllBtn = document.querySelector('.removeall-btn');
 
 function addToCart(price, imgSrc, productName) {
     totalItems++;
@@ -25,6 +26,8 @@ function addToCart(price, imgSrc, productName) {
     if (cartContent.children.length === 1) {
         cartContent.innerHTML = ''; 
     }
+
+    removeAllBtn.style.display = 'block';
 }
 
 
@@ -34,7 +37,9 @@ function removeall() {
     document.getElementById('citems').innerText = totalItems;
     document.getElementById('price').innerText = totalPrice.toFixed(2);
 
-    cartContent.innerHTML = '<p>Cart is empty</p>';
+    cartContent.innerHTML = '<p>No products in the cart.</p>';
+
+    removeAllBtn.style.display = 'none';
 }
 
 const cartToggleBtn = document.getElementById('cartToggleBtn');
