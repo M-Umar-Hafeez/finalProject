@@ -2,15 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   font-family: Arial, sans-serif;
-  color: #fff;
-}
+  color: #f9f9f9;
+  background-color: #908c8c;
+    line-height: 1.6;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
@@ -20,16 +27,19 @@ body {
 
 .logo {
   display: flex;
+  /* flex-wrap: wrap; / */
   align-items: center;
   z-index: 1;
   position: relative;
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
-  margin-left: 500px;
-  margin-top: 28px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+    width: 60px;
+    height: 60px;
+    margin-left: 500px;
+    margin-top: 28px;
 }
 
 .logo h2 {
@@ -37,6 +47,8 @@ body {
   margin-top: 10px;
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
+  font-weight: 600;
+
 }
 
 .logo h4 {
@@ -58,18 +70,18 @@ body {
   font-weight: bold;
 }
 
-.bg {
+/* .bg {
   display: flex;
   position: absolute;
-}
-
+} */
+/* 
 .bg img {
   margin-top: -210px;
   filter: brightness(45%);
   width: 100%;
   height: 104%;
   position: fixed;
-}
+} */
 
 .nav-links {
   list-style: none;
@@ -188,4 +200,81 @@ body {
   width: 25px;
   height: 23px;
   margin-bottom: -5px;
+}
+
+main{
+  margin-top: 50px;
+}
+
+
+
+.about {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6A1B9A; /* Deep Purple */
+  font-size: 2.5em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+} */
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.text p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #030303; /* Deep Purple */
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+
 }
