@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="store.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
 </head>
 <body>
+  <div class="social-bar">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="order-text">
+      <span>Order above Rs. 500 to get Rs 99 delivery</span>
+    </div>
+  </div>
   <div class="logo">
     <img src="./images/LOGO.png" alt="Logo" />
     <hr class="line" />
@@ -22,38 +47,108 @@
       <li><a href="../Aboutpage/about.html">About Us</a></li>
       <li><a href="../storepage/store.html">Store</a></li>
       <li class="dropdown">
-        <a class="dropbtn" href="">My account<i class="downarrow fi fi-ts-angle-down"></i> </a>
+        <a class="dropbtn" href=""
+          >My account<i class="downarrow fi fi-ts-angle-down"></i>
+        </a>
         <div class="dropdown-content">
           <a href="../Loginpage/login.html">Log In</a>
           <a href="../Signuppage/signup.html">Sign Up</a>
-      </div>
+        </div>
       </li>
       <li><a href="../Contactpage/contact.html">Contact Us</a></li>
     </ul>
     <div class="cartandsearch">
       <div class="search">
         <div class="mains">
-        <a href=""
-          ><img
-            src="./images/search icon.png"
-            alt=""
-            width="30px"
-            height="30px"
-            id="sicon" /></a
-        ></div><input type="text" id="srch" placeholder="Search......" />
+          <button>
+            <a href=""
+              ><img
+                src="./images/search icon.png"
+                alt=""
+                width="30px"
+                height="30px"
+                id="sicon"
+            /></a>
+          </button>
+        </div>
+        <input type="text" id="srch" placeholder="Search......" />
       </div>
-      <div class="cart">
-        <a class="carta" href="#"
-          >Cart/$0.00
+      <header class="header">
+        <button id="cartToggleBtn" class="cart-toggle-btn">
+          <b>Cart/$</b><b id="price">0.00</b>
           <span class="cart-icon">
-            <img src="./images/icon.png" alt="" /><sup>0</sup>
+            <img src="./images/icon.png" alt="" /><sup id="citems"
+              ><b>0</b></sup
+            >
           </span>
-        </a>
+        </button>
+      </header>
+      <div id="cart" class="cart-sidebar">
+        <div class="cart-header">
+          <h2>Your Shopping Cart</h2>
+          <span class="close-btn" id="closeBtn">&times;</span>
+        </div>
+        <div class="cart-content">
+          <p>Your items will show here after add to cart.</p>
+        </div>
+        <div class="cart-footer">
+          <a href="../storepage/store.html"
+            ><button class="continue-btn">CONTINUE SHOPPING</button></a
+          >
+          <a href=""
+            ><button class="removeall-btn" onclick="removeall()">
+              REMOVE ALL
+            </button></a
+          >
+        </div>
       </div>
+      <div id="overlay" class="overlay"></div>
     </div>
   </nav>
-  <div class="bg">
-    <img src="./images/BG.jpg" alt="" />
-  </div>
+  <section class="product-gallery">
+    <div class="product-card">
+        <div class="discount-badge">-20%</div>
+        <img src="./images/ringsss.png" alt="Couple Silver Ring Diamond">
+        <div class="product-info">
+            <p class="category">Rings</p>
+            <h3>Couple Silver Ring Diamond</h3>
+            <div class="ratings">
+                <span>★★★★★</span>
+            </div>
+            <div class="price">
+                <span class="old-price">$123.00</span>
+                <span class="new-price">$99.00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="./images/neckalce.png" alt="Silver Diamond Necklace">
+        <div class="product-info">
+            <p class="category">Necklace</p>
+            <h3>Silver Diamond Necklace</h3>
+            <div class="ratings">
+                <span>★★★★☆</span>
+            </div>
+            <div class="price">
+                <span>$185.00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card out-of-stock">
+        <img src="./images/ringse.jpg" alt="Diamond Wedding Ring">
+        <div class="product-info">
+            <p class="category">Rings</p>
+            <h3>Diamond Wedding Ring</h3>
+            <div class="ratings">
+                <span>★★★☆☆</span>
+            </div>
+            <div class="price">
+                <span>$95.00</span>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
