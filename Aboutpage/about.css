@@ -350,7 +350,7 @@ main{
   max-width: 800px;
   margin: auto;
   background: rgb(63, 63, 63);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgb(170, 84, 148);
   border-radius: 20px;
   animation: fadeIn 2s ease;
 }

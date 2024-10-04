@@ -1,11 +1,11 @@
 let totalItems = 0;
 let totalPrice = 0.0;
-const cartContent = document.querySelector('.cart-content');
-const removeAllBtn = document.querySelector('.removeall-btn');
 const cartToggleBtn = document.getElementById('cartToggleBtn');
 const closeBtn = document.getElementById('closeBtn');
 const cartSidebar = document.getElementById('cart');
 const overlay = document.getElementById('overlay');
+const cartContent = document.querySelector('.cart-content');
+const removeAllBtn = document.querySelector('.removeall-btn');
 
 function loadCart() {
     const storedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -37,7 +37,7 @@ function loadCart() {
             removeAllBtn.style.display = 'block';
         }
     } else {
-        cartContent.innerHTML = '<p>Cart is empty</p>';
+        cartContent.innerHTML = '<p>No product in the cart</p>';
     }
 }
 
@@ -77,8 +77,7 @@ function removeall() {
 
     document.getElementById('citems').innerText = totalItems;
     document.getElementById('price').innerText = totalPrice.toFixed(2);
-
-    cartContent.innerHTML = '<p>No products in the cart.</p>';
+    cartContent.innerHTML = '<p>No product in the cart</p>';
 
     removeAllBtn.style.display = 'none';
 
@@ -87,9 +86,6 @@ function removeall() {
     localStorage.removeItem('cartTotalPrice');
 
 }
-window.onload = loadCart;
-
-
 function toggleCart() {
     cartSidebar.classList.toggle('active');
     overlay.classList.toggle('active');
@@ -98,3 +94,5 @@ function toggleCart() {
 cartToggleBtn.addEventListener('click', toggleCart);
 closeBtn.addEventListener('click', toggleCart);
 overlay.addEventListener('click', toggleCart);
+
+window.onload = loadCart;
