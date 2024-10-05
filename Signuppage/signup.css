@@ -339,3 +339,51 @@ body {
   height: 50px; 
   margin-right: 10px;
 }
+
+.container {
+  text-align: center;
+}
+
+.signup-box {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.signup-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}

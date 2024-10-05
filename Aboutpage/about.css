@@ -83,7 +83,7 @@ body {
 .logo h4 {
   margin-left: -120px;
   margin-top: 40px;
-  font-family:"Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -177,7 +177,7 @@ body {
   outline: none;
   background-color: white;
   /* border-bottom: rgb(0, 0, 0) 2px solid; */
-  border: 2px solid  #85516a;
+  border: 2px solid #85516a;
   border-radius: 10px 13px 10px 13px;
   padding: 10px;
   font-size: medium;
@@ -197,7 +197,6 @@ body {
   position: relative;
   margin-top: 38px;
 }
-
 
 .cart-icon img {
   width: 25px;
@@ -257,7 +256,7 @@ body {
 }
 
 .removeall-btn {
-  display: none; 
+  display: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   padding: 10px 20px;
@@ -276,12 +275,12 @@ body {
 }
 
 .cart-footer .removeall-btn:hover {
-  background-color:  rgb(197, 32, 32);
+  background-color: rgb(197, 32, 32);
   color: #ffffff;
   text-decoration: none;
 }
 
-.continue-btn{
+.continue-btn {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   margin-bottom: 15px;
@@ -335,64 +334,72 @@ body {
 }
 
 .cart-product-img {
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
 
-main{
+main {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .about {
+  background-image: url("./images/28513321353.png");
+  background-size: cover;
+  background-position: center;
   padding: 40px;
-  max-width: 800px;
-  margin: auto;
-  background: rgb(63, 63, 63);
-  box-shadow: 0 4px 20px rgb(170, 84, 148);
+  width: 1170px;
+  margin-left: 50px;
+  color: white;
   border-radius: 20px;
   animation: fadeIn 2s ease;
-}
+} 
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(100px);
+    opacity: 0;
+    transform: translateY(100px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .about h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
   text-align: center;
+  color: #ffcc00;
   margin-bottom: 20px;
-  color: #ffae00;
-  font-size: 2.5em;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.651); /* Optional: Dark overlay for text visibility */
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  margin-left: 135px;
+  box-shadow: 0 0 10px rgb(126, 29, 102);
 }
+
 
 .about-image:hover {
   transform: scale(1.05);
 }
 
 .text {
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
   line-height: 1.7;
+  margin-left: 33px;
 }
 
 .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 15px;
-  font-size: 1.1em;
-  color: #ffffff;
 }
 
 .footer {
@@ -490,5 +497,4 @@ main{
 }
 
 @media screen and (max-width: 500px) {
-
 }
