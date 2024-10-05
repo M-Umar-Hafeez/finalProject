@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Account || Sign Up</title>
     <link rel="stylesheet" href="signup.css" />
-    <link rel="icon" type="image/x-icon" href="./images/Favicon.png">
+    <link rel="icon" type="image/x-icon" href="./images/Favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -61,67 +61,74 @@
     </nav>
 
     <div class="container">
-      <div class="signup-box">
+      <div class="bgsignup">
+        <div class="signup-box">
           <h2>Create Account</h2>
           <form action="#" method="POST">
-              <div class="input-group">
-                  <input type="text" placeholder="Full Name" required>
-              </div>
-              <div class="input-group">
-                  <input type="username" placeholder="Username" required>
-              </div>
-              <div class="input-group">
-                  <input type="password" placeholder="Password" required>
-              </div>
-              <div class="input-group">
-                  <input type="password" placeholder="Confirm Password" required>
-              </div>
-              <div class="input-group">
-                <input type="text" placeholder="Phone Number" required>
+            <div class="input-group1">
+              <input type="text" placeholder="Full Name" required />
             </div>
-              <button type="submit" class="btn">SIGN UP</button>
+            <div class="input-group2">
+              <input type="username" placeholder="Username" required />
+            </div>
+            <div class="input-group3">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="input-group4">
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+            <div class="input-group5">
+              <input type="text" placeholder="Phone Number" required />
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="terms" />
+              <label for="terms">I accept the <a href="">Terms of Use & Privacy Policy.</a></label>
+            </div>
+            <a href=""><button type="submit" class="btn">SIGN UP</button></a>
+            <p>Already have an account?<a class="logina" href="../Loginpage/login.html">Login here!</a></p>
           </form>
-      </div>
-  </div>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h4>Customer Service</h4>
-        <ul>
-          <li><a href="../Contactpage/contact.html">Contact Us</a></li>
-          <li><a href="#">Returns & Exchanges</a></li>
-          <li><a href="#">Shipping Information</a></li>
-          <li><a href="#">Track Order</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Information</h4>
-        <ul>
-          <li><a href="../Aboutpage/about.html">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Jewelry Care Guide</a></li>
-        </ul>
-      </div>
-      <div class="footer-column newsletter">
-        <h4>Join Our Page</h4>
-        <p>
-          Sign up for the latest updates on new arrivals and exclusive offers.
-        </p>
-        <input type="email" placeholder="Enter your email" />
-        <div class="social-icons">
-          <a href="#"><i class="fi fi-brands-facebook"></i></a>
-          <a href="#"><i class="fi fi-brands-instagram"></i></a>
-          <a href="#"><i class="fi fi-brands-pinterest"></i></a>
-          <a href="#"><i class="fi fi-brands-twitter"></i></a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="../Contactpage/contact.html">Contact Us</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="../Aboutpage/about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Jewelry Care Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column newsletter">
+          <h4>Join Our Page</h4>
+          <p>
+            Sign up for the latest updates on new arrivals and exclusive offers.
+          </p>
+          <input type="email" placeholder="Enter your email" />
+          <div class="social-icons">
+            <a href="#"><i class="fi fi-brands-facebook"></i></a>
+            <a href="#"><i class="fi fi-brands-instagram"></i></a>
+            <a href="#"><i class="fi fi-brands-pinterest"></i></a>
+            <a href="#"><i class="fi fi-brands-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
