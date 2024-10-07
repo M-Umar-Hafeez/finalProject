@@ -87,6 +87,7 @@ function removeall() {
     localStorage.removeItem('cartTotalPrice');
 
 }
+
 function toggleCart() {
     cartSidebar.classList.toggle('active');
     overlay.classList.toggle('active');
@@ -97,3 +98,4 @@ closeBtn.addEventListener('click', toggleCart);
 overlay.addEventListener('click', toggleCart);
 
 window.onload = loadCart;
+
