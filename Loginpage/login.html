@@ -65,17 +65,17 @@
           <h2>Login</h2>
           <form>
               <div class="input-group1">
-                  <input type="text" placeholder="Username " required>
+                  <input type="text" placeholder="Username " required id="username">
               </div>
               <div class="input-group2">
-                  <input type="password" placeholder="Password" required>
+                  <input type="password" placeholder="Password" required id="password">
               </div>
               <div class="remember-me">
                   <input type="checkbox" id="remember-me">
                   <label for="remember-me">Remember me</label>
                   <a class="forgot" href="">Forgot Password?</a>
               </div>
-              <a href="../homepage/Index.html"><button class="login-button">LOG IN</button></a> 
+              <button class="login-button" onclick="login()">LOG IN</button> 
               <p>Haven't an account yet?<a class="signa" href="../Signuppage/signup.html"> Sign Up here!</a></p>
           </form>
       </div>
@@ -119,5 +119,6 @@
         <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
     </div>
 </footer>
+<script src="login.js"></script>
   </body>
 </html>

@@ -432,7 +432,7 @@ form .remember-me .forgot:hover{
   text-decoration: underline;
 }
 
-a .login-button {
+ .login-button {
   width: 100%;
   padding: 12px;
   margin-top: 35px;
@@ -446,7 +446,7 @@ a .login-button {
   transition: background-color 0.3s;
 }
 
-a .login-button:hover {
+ .login-button:hover {
   background-color: #d1a945;
   color: #111;
 }

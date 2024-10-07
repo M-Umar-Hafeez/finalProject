@@ -69,10 +69,10 @@
               <input type="text" placeholder="Full Name" required />
             </div>
             <div class="input-group2">
-              <input type="username" placeholder="Username" required />
+              <input type="username" placeholder="Username" required id="uname" />
             </div>
             <div class="input-group3">
-              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Password" required id="pass" />
             </div>
             <div class="input-group4">
               <input type="password" placeholder="Confirm Password" required />
@@ -84,7 +84,7 @@
               <input type="checkbox" id="terms" />
               <label for="terms">I accept the <a href="">Terms of Use & Privacy Policy.</a></label>
             </div>
-            <a href=""><button type="submit" class="btn">SIGN UP</button></a>
+            <button type="submit" class="btn" onclick="signup()">SIGN UP</button>
             <p>Already have an account?<a class="logina" href="../Loginpage/login.html">Login here!</a></p>
           </form>
         </div>
@@ -130,5 +130,6 @@
         <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
       </div>
     </footer>
+  <script src="signup.js"></script>
   </body>
 </html>
