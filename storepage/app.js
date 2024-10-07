@@ -97,3 +97,4 @@ closeBtn.addEventListener('click', toggleCart);
 overlay.addEventListener('click', toggleCart);
 
 window.onload = loadCart;
+
