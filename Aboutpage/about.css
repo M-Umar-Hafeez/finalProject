@@ -274,6 +274,10 @@ body {
   color: rgb(184, 26, 26);
 }
 
+.cart-footer a{
+  text-decoration: none;
+}
+
 .cart-footer .removeall-btn:hover {
   background-color: rgb(197, 32, 32);
   color: #ffffff;
@@ -400,6 +404,65 @@ main {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 1181px;
+  height: 135px;
+  background-color: #fad259;
+  margin-left: 40px;
+  margin-top: 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.text-section h1 {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.9rem;
+  margin-top: 42px;
+  margin-left: 40px;
+  /* color: rgb(236, 211, 211); */
+}
+
+.text-section h2 {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  margin-left: 630px;
+  margin-top: -45px;
+}
+
+.text-section a .join-button {
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  margin-top: -50px;
+  margin-left: 960px;
+  padding-left: 32px;
+  padding-top: 17px;
+  width: 165px;
+  height: 55px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.text-section a {
+  text-decoration: none;
+}
+
+
+a .join-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-decoration: none;
 }
 
 .footer {

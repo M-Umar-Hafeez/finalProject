@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="icon" type="image/x-icon" href="./images/Favicon.png">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/x-icon" href="./images/Favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -18,203 +18,209 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
     />
-</head>
-<body>
-  <div class="social-bar">
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-      <a href="#"><i class="fab fa-pinterest-p"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-      <a href="#"><i class="fab fa-snapchat"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </head>
+  <body>
+    <div class="social-bar">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="order-text">
+        <span>Order above Rs. 500 to get Rs 99 delivery</span>
+      </div>
     </div>
-    <div class="order-text">
-      <span>Order above Rs. 500 to get Rs 99 delivery</span>
+    <div class="logo">
+      <img src="./images/LOGO.png" alt="Logo" />
+      <hr class="line" />
+      <h2>MERITORIOUS</h2>
+      <h4>Jewellry</h4>
     </div>
-  </div>
-  <div class="logo">
-    <img src="./images/LOGO.png" alt="Logo" />
-    <hr class="line" />
-    <h2>MERITORIOUS</h2>
-    <h4>Jewellry</h4>
-  </div>
-  <br /><br />
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="../homepage/Index.html">Home</a></li>
-      <li><a href="../Aboutpage/about.html">About Us</a></li>
-      <li><a href="../storepage/store.html">Store</a></li>
-      <li class="dropdown">
-        <a class="dropbtn" href=""
-          >My account<i class="downarrow fi fi-ts-angle-down"></i>
-        </a>
-        <div class="dropdown-content">
-          <a href="../Loginpage/login.html">Log In</a>
-          <a href="../Signuppage/signup.html">Sign Up</a>
+    <br /><br />
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../homepage/Index.html">Home</a></li>
+        <li><a href="../Aboutpage/about.html">About Us</a></li>
+        <li><a href="../storepage/store.html">Store</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href=""
+            >My account<i class="downarrow fi fi-ts-angle-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="../Loginpage/login.html">Log In</a>
+            <a href="../Signuppage/signup.html">Sign Up</a>
+          </div>
+        </li>
+        <li><a href="../Contactpage/contact.html">Contact Us</a></li>
+      </ul>
+      <div class="cartandsearch">
+        <div class="search">
+          <div class="mains">
+            <button>
+              <a href=""
+                ><img
+                  src="./images/search icon.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                  id="sicon"
+              /></a>
+            </button>
+          </div>
+          <input type="text" id="srch" placeholder="Search......" />
         </div>
-      </li>
-      <li><a href="../Contactpage/contact.html">Contact Us</a></li>
-    </ul>
-    <div class="cartandsearch">
-      <div class="search">
-        <div class="mains">
-          <button>
-            <a href=""
-              ><img
-                src="./images/search icon.png"
-                alt=""
-                width="30px"
-                height="30px"
-                id="sicon"
-            /></a>
+        <header class="header">
+          <button id="cartToggleBtn" class="cart-toggle-btn">
+            <b>Cart/$</b><b id="price">0.00</b>
+            <span class="cart-icon">
+              <img src="./images/icon.png" alt="" /><sup id="citems"
+                ><b>0</b></sup
+              >
+            </span>
           </button>
-        </div>
-        <input type="text" id="srch" placeholder="Search......" />
-      </div>
-      <header class="header">
-        <button id="cartToggleBtn" class="cart-toggle-btn">
-          <b>Cart/$</b><b id="price">0.00</b>
-          <span class="cart-icon">
-            <img src="./images/icon.png" alt="" /><sup id="citems"
-              ><b>0</b></sup
+        </header>
+        <div id="cart" class="cart-sidebar">
+          <div class="cart-header">
+            <h2>Your Shopping Cart</h2>
+            <span class="close-btn" id="closeBtn">&times;</span>
+          </div>
+          <div class="cart-content">
+            <p>Your items will show here after add to cart.</p>
+          </div>
+          <div class="cart-footer">
+            <a href="../storepage/store.html"
+              ><button class="continue-btn">CONTINUE SHOPPING</button></a
             >
-          </span>
-        </button>
-      </header>
-      <div id="cart" class="cart-sidebar">
-        <div class="cart-header">
-          <h2>Your Shopping Cart</h2>
-          <span class="close-btn" id="closeBtn">&times;</span>
+            <a href=""
+              ><button class="removeall-btn" onclick="removeall()">
+                REMOVE ALL
+              </button></a
+            >
+          </div>
         </div>
-        <div class="cart-content">
-          <p>Your items will show here after add to cart.</p>
-        </div>
-        <div class="cart-footer">
-          <a href="../storepage/store.html"
-            ><button class="continue-btn">CONTINUE SHOPPING</button></a
-          >
-          <a href=""
-            ><button class="removeall-btn" onclick="removeall()">
-              REMOVE ALL
-            </button></a
-          >
-        </div>
+        <div id="overlay" class="overlay"></div>
       </div>
-      <div id="overlay" class="overlay"></div>
-    </div>
-  </nav>
+    </nav>
 
-
-<!-- <section class="contact-section">
     <div class="container">
-      <h1>Get In Touch With Us</h1>
-      <div class="contact-grid">
-        <div class="contact-form">
-          <form id="contactForm" action="#" method="POST" novalidate>
-            <div class="form-row">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
-              <span class="error" id="nameError"></span>
+      <div class="bg-contact">
+        <div class="contact-box">
+          <h2>Get in touch with Us</h2>
+          <form action="#" method="POST">
+            <div class="input-group1">
+              <input type="text" placeholder="Full Name" required />
+            </div>
+            <div class="input-group2">
+              <input type="email" placeholder="Email" required />
             </div>
 
-            <div class="form-row">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-              <span class="error" id="emailError"></span>
+            <div class="input-group5">
+              <input type="number" placeholder="Phone Number" required />
             </div>
 
-            <div class="form-row">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            <div class="message">
+              <!-- <label for="your-messsage">Your Message</label> -->
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message"
+                required
+              ></textarea>
             </div>
 
-            <div class="form-row">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-              <span class="error" id="messageError"></span>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Message</button>
+            <a href=""
+              ><button type="submit" class="btn">SEND MSSAGE</button></a
+            >
           </form>
         </div>
+      </div>
+    </div>
 
-        <div class="contact-info">
-          <div class="address">
-            <h3>Our Office</h3>
-            <p>123 Jewelry Avenue, Suite 400</p>
-            <p>New York, NY, 10001</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: <a href="mailto:info@elegantjewelry.com">info@elegantjewelry.com</a></p>
-          </div>
+    <div class="contact">
+      <div class="phone">+92321-2437685</div>
+      <div class="address">
+        123 Jewelry Avenue, Suite 400 KARACHI, NY, 10001 <br /><a class="info"
+          href="mailto:info@meritoriousjewellry.com"
+          >info@meritoriousjewellry.com</a
+        >
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53624906.35563131!2d-6.052824200000003!3d34.88123235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s123%20Jewelry%20Avenue%2C%20Suite%20400%20%20KARACHI%2C%20NY%2C%2010001!5e0!3m2!1sen!2s!4v1728153922587!5m2!1sen!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
-          <div class="social">
-            <h3>Follow Us</h3>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Pinterest</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
+    <div class="banner">
+      <div class="text-section">
+        <h1>Golden Citizen Membership</h1>
+        <h2>
+          Plus 5% Rewards and Free <br />
+          Shipping
+        </h2>
+        <a href=""><button class="join-button">JOIN TODAY</button></a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="../Contactpage/contact.html">Contact Us</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="../Aboutpage/about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Jewelry Care Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column newsletter">
+          <h4>Join Our Page</h4>
+          <p>
+            Sign up for the latest updates on new arrivals and exclusive offers.
+          </p>
+          <input type="email" placeholder="Enter your email" />
+          <div class="social-icons">
+            <a href="#"><i class="fi fi-brands-facebook"></i></a>
+            <a href="#"><i class="fi fi-brands-instagram"></i></a>
+            <a href="#"><i class="fi fi-brands-pinterest"></i></a>
+            <a href="#"><i class="fi fi-brands-twitter"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  Google Map Embed 
-  <section class="map-section">
-    <div class="container">
-      <h2>Visit Us</h2>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Jewelry Brand. All rights reserved.</p>
       </div>
-    </div>
-  </section> -->
+    </footer>
 
-
-  <div class="container">
-    <div class="bg-contact">
-      <div class="contact-box">
-        <h2>Get in touch with Us</h2>
-        <form action="#" method="POST">
-          <div class="input-group1">
-            <input type="text" placeholder="Full Name" required />
-          </div>
-           <div class="input-group2">
-            <input type="email" placeholder="Email" required />
-          </div>
-        
-          <div class="input-group5">
-            <input type="number" placeholder="Phone Number" required />
-          </div>
-
-           <div class="message">
-            <!-- <label for="your-messsage">Your Message</label> -->
-            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-          </div> 
-
-          <a href=""><button type="submit" class="btn">SEND MSSAGE</button></a>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-info">
-    <div class="address">
-      <h3>Our Office</h3>
-      <p>123 Jewelry Avenue, Suite 400</p>
-      <p>KARACHI, NY, 10001</p>
-      <p>Phone: 0321-2437685</p>
-      <p>Email: <a href="mailto:info@meritoriousjewellry.com">info@elegantjewelry.com</a></p>
-    </div>
-
-    <br><br><br><br><br><br>
-
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

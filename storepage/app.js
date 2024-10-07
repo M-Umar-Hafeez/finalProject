@@ -39,7 +39,6 @@ function loadCart() {
     } else {
         cartContent.innerHTML = '<p>No product in the cart</p>';
     }
-    
 }
 
 function addToCart(price, imgSrc, productName) {
@@ -87,6 +86,7 @@ function removeall() {
     localStorage.removeItem('cartTotalPrice');
 
 }
+
 function toggleCart() {
     cartSidebar.classList.toggle('active');
     overlay.classList.toggle('active');
