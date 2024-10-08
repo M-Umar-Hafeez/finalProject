@@ -33,12 +33,23 @@ function loadCart() {
             cartContent.appendChild(productDiv);
         });
 
-        if (totalItems > 0) {
-            removeAllBtn.style.display = 'block';
-        }
+        removeAllBtn.style.display = 'block';
     } else {
         cartContent.innerHTML = '<p>No product in the cart</p>';
     }
+}
+
+function toggleProductDetails(name, imageSrc, price, description) {
+    document.getElementById('modalProductName').innerText = name;
+    document.getElementById('modalProductImage').src = imageSrc;
+    document.getElementById('modalProductPrice').innerText = price;
+    document.getElementById('modalProductDescription').innerText = description;
+
+    document.getElementById('productDetailsModal').style.display = 'block'; 
+}
+
+function closeModal() {
+    document.getElementById('productDetailsModal').style.display = 'none';
 }
 
 function addToCart(price, imgSrc, productName) {
@@ -60,7 +71,13 @@ function addToCart(price, imgSrc, productName) {
 
     cartContent.appendChild(productDiv);
 
-    removeAllBtn.style.display = 'block';
+    if (totalItems > 0) {
+        const noProductsMessage = cartContent.querySelector('p');
+        if (noProductsMessage) {
+            noProductsMessage.remove();
+        }
+        removeAllBtn.style.display = 'block'; 
+    }
 
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     cartItems.push({ price, imgSrc, productName });
@@ -68,8 +85,6 @@ function addToCart(price, imgSrc, productName) {
     localStorage.setItem('cartTotalItems', totalItems);
     localStorage.setItem('cartTotalPrice', totalPrice.toFixed(2));
 }
-
-
 
 function removeall() {
     totalItems = 0;
@@ -84,7 +99,6 @@ function removeall() {
     localStorage.removeItem('cartItems');
     localStorage.removeItem('cartTotalItems');
     localStorage.removeItem('cartTotalPrice');
-
 }
 
 function toggleCart() {
@@ -97,4 +111,3 @@ closeBtn.addEventListener('click', toggleCart);
 overlay.addEventListener('click', toggleCart);
 
 window.onload = loadCart;
-
