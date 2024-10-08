@@ -393,12 +393,18 @@ body {
   border-radius: 8px;
 }
 
+#modalProductName{
+  font-size: 1.5rem;
+}
+
 #modalProductPrice{
   color: #f9a825;
+  margin-top: 20px;
 }
 
 #modalProductDescription{
-
+  color: #a0a0a0;
+  margin-top: 20px;
 }
 
 .modal-content img {
@@ -414,34 +420,30 @@ body {
 
 .product-icons {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
+  top: 15px;
+  right: 15px;
+  /* display: flex; */
   gap: 10px;
-  opacity: 0; /* Hidden by default */
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Show icons when hovering over the product card */
 .product-card:hover .product-icons {
   opacity: 1;
   cursor: pointer;
 }
 
-  
-
-
 .product-icons .cart1-icon, .view-icon {
   cursor: pointer;
   font-size: 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(56, 56, 56, 0.815);
   padding: 5px;
   border-radius: 50%;
   transition: background 0.3s ease;
 }
 
 .product-icons .cart1-icon:hover, .view-icon:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.815);
   color: #fff;
 }
 
@@ -504,29 +506,6 @@ h3 {
   padding: 15px;
   border: 1px solid #ddd;
   text-align: center;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  margin: 0 4px;
-}
-
-.pagination a.active {
-  background-color: #252525;
-  color: white;
-}
-
-.pagination a:hover{
-  background-color: #814767;
 }
 
 .footer {
