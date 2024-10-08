@@ -353,17 +353,6 @@ body {
   border-radius: 20px;
 }
 
-/* .rings img {
-  position: relative;
-  margin-top: -40%;
-  margin-left: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 39%;
-  filter: contrast(95%);
-  filter: saturate(30%);
-} */
-
 .rings h1 {
   position: relative;
   margin-left: 55%;
@@ -456,15 +445,16 @@ body {
 
 .distext p {
   position: relative;
-  margin-left: -375px;
+  margin-left: -125px;
   margin-top: -250px;
   color: rgb(255, 255, 255);
-
+  width: 375px;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .distext .linee {
+  display: none;
   position: relative;
   margin-left: -127px;
   margin-top: -275px;
@@ -486,7 +476,7 @@ a {
   margin-left: -375px;
   width: 200px;
   height: 58px;
-  margin-top: -135px;
+  margin-top: -155px;
   border: 1px solid #d1a945;
   color: #fff;
   font-size: 1rem;
@@ -520,19 +510,6 @@ a {
   margin-top: -570px;
   border-radius: 20px;
 }
-
-/* .eartops {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.eartops img {
-  width: 168px;
-  height: 130px;
-  margin-left: 890px;
-  margin-top: -440px;
-} */
 
 .eartops2 {
   display: flex;
@@ -956,7 +933,6 @@ a .join-button:hover {
 
   .sidenav {
     z-index: 1;
-    /* position: relative; */
     width: 0;
   }
 
@@ -990,10 +966,15 @@ a .join-button:hover {
   .cart-sidebar{
     font-size: 12px;
     width: 200px;
-    margin-right: 845px;
+    margin-right: 750px;
   }
 
   .cart-footer .continue-btn{
+    margin-left: -10px;
+    font-size: 12px;
+    width: 180px;
+  }
+  .cart-footer .removeall-btn{
     margin-left: -10px;
     font-size: 12px;
     width: 180px;
@@ -1013,10 +994,195 @@ a .join-button:hover {
   .rings p{
     font-size: 12px;
     margin-left: 170px;
+    margin-top: -15px;
+  }
+
+  .rings button{
+    font-size: 12px;
+    margin-left: 170px;
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .necklace{
+    margin-top: 88px;
+    margin-left: 12px;
+    width: 351px;
+  }
+
+  .distext h1{
+    font-size: 1.55rem;
+    margin-left: 170px;
+    margin-top: -260px ;
+  }
+
+  .distext h2{
+    font-size: 1.22rem;
+    margin-left: 170px;
+    margin-top: -190px ;
+  }
+
+  .distext .linee{
+    margin-left: 170px;
+    margin-top: -176px ;
+    display: none;
+  }
+
+  .distext p{
+    width: 200px;
+    font-size: 11px;
+    margin-left: 170px;
+    margin-top: -150px ;
+  }
+
+  .distext .butt2{
+    font-size: 12px;
+    margin-left: 170px;
+    margin-top: -90px;
+    width: 130px;
+    height: 40px;
+    padding: 12px;
+  }
+
+  .ref1{
+    margin-top: 404px;
+  }
+
+  .bg3 img{
+    width: 351px;
+  }
+
+  .bg3{
+    margin-top: -45px;
+    margin-left: -818px;
+  }
+
+  .eartops2{
+    margin-left: 7px;
+    margin-top: -170px ;
+  }
+
+  .eartops2 h1{
+    margin-right: 200px;
+    font-size: 1.55rem;
+    width: 300px;
+  }
+
+  .eartops2 button{
+    display: flex;
+    height: 40px;
+    font-size: 12px;
+    width: 96px;
+    padding: 12px;
+    margin-top: -250px;
+
+  }
+
+  .girlpic{
+    display: block;
+    width: 350px;
+    margin-left: -27px;
+    margin-top: -280px;
+  }
+
+  .girlpic img{
+    margin-top: 340px;
+  }
+
+  .girlpic h1{
+    margin-left: 80px;
+    font-size: 1.55rem;
+    margin-top: -180px;
+  }
+
+  .girlpic button{
+    margin-left: 170px;
+    margin-top: 20px;
+    font-size: 12px;
+    width: 96px;
+    height: 40px;
+    padding: 12px;
+  }
+
+  .manpic{
+    margin-top: 500px;
+    margin-left: 200px;
+    display: inline;
+  }
+
+  .manpic img{
+    width: 348px;
+    margin-left: 15px;
+    margin-top: 33px;
+  }
+
+  .manpic h1{
+    font-size: 2rem;
+    margin-top: -230px;
+    margin-left: 30px;
+  }
+
+  .manpic p{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .manpic button{
+    font-size: 12px;
+    width: 96px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 29px;
+    margin-top: 30px;
+  }
+
+  .banner{
+    height: 300px;
+    border-radius: 0%;
+    width: 375px;
+    margin-left: 0px;
+    margin-top: 90px;
+  }
+
+  .banner .text-section{
+    text-align: center;
+    width: 300px;
+  }
+
+  .text-section h1{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 2rem;
+  }
+
+  .text-section h2{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 1.2rem;
+  }
+
+  .text-section .join-button {
+    margin-top: 600px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .join-button{
+      
+    margin-left: 40px;
+  }
+
+  .footer{
+    margin-top: 20px;
   }
 
   .footer-column h4 {
     font-size: 20px;
+  }
+  .footer-bottom{
+    display: none;
   }
 
   .cart-toggle-btn {
@@ -1027,7 +1193,9 @@ a .join-button:hover {
 
   .firstdiv img,
   .girlpic img,
-  .manpic img {
+  .manpic img,
+  .necklace img,
+  .bg3 img {
     display: flex;
     max-width: 100%;
     height: 300px;
