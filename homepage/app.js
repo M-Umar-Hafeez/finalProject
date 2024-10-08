@@ -99,6 +99,7 @@ overlay.addEventListener('click', toggleCart);
 
 window.onload = loadCart;
 
+
 document.getElementById("openNav").onclick = function () {
     document.getElementById("mySidenav").style.width = "250px";
 };
@@ -112,4 +113,3 @@ window.onclick = function (event) {
         document.getElementById("mySidenav").style.width = "0";
     }
 };
-
