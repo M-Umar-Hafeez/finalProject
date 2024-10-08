@@ -413,31 +413,36 @@ body {
 }
 
 .product-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
 }
 
+/* Show icons when hovering over the product card */
 .product-card:hover .product-icons {
-    opacity: 1;
+  opacity: 1;
+  cursor: pointer;
 }
 
-.cart-icon1, .view-icon {
-    cursor: pointer;
-    font-size: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 5px;
-    border-radius: 50%;
-    transition: background 0.3s ease;
+  
+
+
+.product-icons .cart1-icon, .view-icon {
+  cursor: pointer;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
 }
 
-.cart-icon1:hover, .view-icon:hover {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+.product-icons .cart1-icon:hover, .view-icon:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .product-info {

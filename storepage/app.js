@@ -46,6 +46,7 @@ function toggleProductDetails(name, imageSrc, price, description) {
     document.getElementById('modalProductDescription').innerText = description;
 
     document.getElementById('productDetailsModal').style.display = 'block'; 
+
 }
 
 function closeModal() {
@@ -85,6 +86,7 @@ function addToCart(price, imgSrc, productName) {
     localStorage.setItem('cartTotalItems', totalItems);
     localStorage.setItem('cartTotalPrice', totalPrice.toFixed(2));
 }
+
 
 function removeall() {
     totalItems = 0;
