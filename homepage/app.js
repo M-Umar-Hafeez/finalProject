@@ -63,7 +63,7 @@ function addToCart(price, imgSrc, productName) {
         if (noProductsMessage) {
             noProductsMessage.remove();
         }
-        removeAllBtn.style.display = 'block'; 
+        removeAllBtn.style.display = 'block';
     }
 
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -99,14 +99,17 @@ overlay.addEventListener('click', toggleCart);
 
 window.onload = loadCart;
 
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "250px";
-//     document.getElementById("main").style.marginLeft = "250px";
-//     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-//   }
-  
-//   function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-//     document.getElementById("main").style.marginLeft= "0";
-//     document.body.style.backgroundColor = "white";
-//   }
+document.getElementById("openNav").onclick = function () {
+    document.getElementById("mySidenav").style.width = "250px";
+};
+
+document.getElementById("closeNav").onclick = function () {
+    document.getElementById("mySidenav").style.width = "0";
+};
+
+window.onclick = function (event) {
+    if (event.target !== document.getElementById("openNav") && event.target !== document.getElementById("mySidenav")) {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+};
+

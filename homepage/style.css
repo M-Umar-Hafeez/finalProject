@@ -869,11 +869,60 @@ a .join-button:hover {
   font-size: 0.9em;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff; 
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.mobile-nav .open-nav {
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+}
+
 @media (max-width: 375px) {
-  .navbar, .social-bar, .footer {
+  .social-bar, .footer {
     display: flex;
     padding: 5px; 
     width: 375px;
+  }
+
+  .navbar .nav-links{
+    display: none;
   }
 
   .social-icons{
@@ -891,48 +940,33 @@ a .join-button:hover {
   .logo img{
     margin-left: 60px;
   }
+  
+  .sideimg {
+    width: 20%;
+    margin-top: -40px;
+    margin-left: 33px;
+    margin-bottom: 20px;
+  }
 
+  .mobile-nav {
+    display: block; 
+    margin-top: -30px;
+  }
+  
+  .sidenav {
+    width: 0; 
+  }
 
-  /* .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  #closeNav{
+    margin-left: 20px;
+    margin-top: 10px;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    font-size: 18px; 
   }
+
   
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}   */
 
   .rings h1, .rings h2, .rings p,
   .footer-column h4 {
@@ -940,7 +974,7 @@ a .join-button:hover {
   }
 
   .cart-toggle-btn {
-    font-size: 12px; 
+    font-size: 16px; 
   }
 
   .firstdiv img, .girlpic img, .manpic img {
@@ -949,3 +983,15 @@ a .join-button:hover {
   }
 
 }
+
+@media screen and (min-width: 769px) {
+.mobile-nav {
+  display: none; 
+}
+
+.sidenav {
+  display: none;
+}
+}
+
+
